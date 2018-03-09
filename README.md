@@ -21,3 +21,9 @@ Exemples de sites :
 - https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm
 - https://www.w3schools.com/w3css/tryw3css_templates_band.htm
 - http://www.guillaumelorain.com/cv/
+
+Effets :
+- Effet paralax
+- Menu en head
+- Hoover type "fade-in"
+- Une couleur par catégorie (profil, bénévolats, loisirs...)
