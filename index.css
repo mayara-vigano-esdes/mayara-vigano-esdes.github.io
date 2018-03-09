@@ -1,0 +1,112 @@
+/** FIRST SECTION **/
+
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+
+html, body {
+ height:100%;
+    margin: 0;
+    width: 100%;
+}
+
+
+header {
+    background-image: url("img/Header_image.jpg");
+    font-family: 'VT323', monospace;
+    font-size: 60px;
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+header h1 {
+    color:white;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.08);
+    border-left: solid 5px white;
+    border-right: solid 5px white;
+    padding: 20px 10px;
+    transition: 0.3s ease-in-out;
+    
+}
+
+header h1:hover{
+background: rgba(255, 255, 255, 0.16);
+}
+
+/** SECTION **/
+
+@import url('https://fonts.googleapis.com/css?family=Mina');
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    background-color: black;
+    font-family: 'Mina', sans-serif;
+}
+
+
+article {
+    height: 200px;
+    width: 200px; 
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 3%;
+    padding : 20px 20px;
+    border: solid 5px white;
+    color: white;
+    }
+
+#Profile {
+    background-image: url("img/Profile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#Diplomas {
+    background-image: url("img/Diplomas.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#Work {
+    background-image: url("img/Work.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#Skills {
+    background-image: url("img/Skills.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#Languages {
+    background-image: url("img/Languages.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#Hobbies {
+    background-image: url("img/Loisirs.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
