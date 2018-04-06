@@ -1,7 +1,11 @@
-/** FIRST SECTION **/
+/* FONTS UPLOADS */
 
-@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=Raleway:800');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300');
 
+
+
+/* HEADER HTML BODY */
 
 html, body {
  height:100%;
@@ -10,103 +14,331 @@ html, body {
 }
 
 
-header {
-    background-image: url("img/Header_image.jpg");
-    font-family: 'VT323', monospace;
-    font-size: 60px;
-    height:100%;
+
+/* MENU */
+
+#menu {
+    padding : 2px 0;
+    margin : 0px;
+    text-align : center;
+    letter-spacing : 1px;
+    border : 0px solid #eee;
+    background : #ffffff;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    height: 62px;
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    width: 100%;
 }
 
-
-header h1 {
-    color:white;
-    margin: 0;
-    background: rgba(255, 255, 255, 0.08);
-    border-left: solid 5px white;
-    border-right: solid 5px white;
-    padding: 20px 10px;
-    transition: 0.3s ease-in-out;
-    
+button {
+    background-color: white;
+    border: solid 2px black;
+    padding: 1.2em;
+    margin: 5px;
+    margin-left: 15px;
+    float: left; 
+    display: inline;
+    color: black; 
+    text-align: center; 
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;  
 }
 
-header h1:hover{
-background: rgba(255, 255, 255, 0.16);
-}
-
-/** SECTION **/
-
-@import url('https://fonts.googleapis.com/css?family=Mina');
-
-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    min-height: 100%;
-    background-color: black;
-    font-family: 'Mina', sans-serif;
-}
-
-
-article {
-    height: 200px;
-    width: 200px; 
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin: 3%;
-    padding : 20px 20px;
-    border: solid 5px white;
+button:hover{
+    background: rgb(0, 0, 0);
     color: white;
-    }
+}
 
-#Profile {
-    background-image: url("img/Profile.jpg");
-    background-repeat: no-repeat;
+.cell {cursor: cell;
+}
+
+#contact {
+    background-color: black;
+    color: white;
+}
+
+#contact:hover {
+    background-color: rgb(178, 218, 0);
+}
+
+
+
+
+
+/* BANNER */
+
+#banner {
+	padding: 12em 0 10em 0;
+	font-family: 'Raleway', sans-serif;
+    height: 100px;  
+    width: 100%;
+}
+
+#banner h1 {
+    font-size: 3em;
+    font-weight: 100;
+    color: #fff;
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
+    width: 38%;
+    padding: 15px;
+}
+
+#banner p {
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.75em;
+    width: 38%;
+    font-family: 'Work Sans', sans serif;
+    padding: 15px;
+}
+
+.parallax {
+    background-image: url("images/Header_image.jpg");
+    height: 100%; 
+    background-attachment: fixed;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-#Diplomas {
-    background-image: url("img/Diplomas.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+
+
+
+/* PROFILE */
+
+#profile {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
 }
 
-#Work {
-    background-image: url("img/Work.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+#profile h1 {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 50;
+    color: rgb(0, 0, 0);
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
+    width: 38%;
+    padding: 5px;
 }
 
-#Skills {
-    background-image: url("img/Skills.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+#profile p {
+    font-size: 0.9em;
+    color: rgb(78, 73, 73);
+    font-family: 'Work Sans', sans serif;
+    margin-bottom: 1.75em;
+    width: 38%;
+    padding: 5px;
 }
 
-#Languages {
-    background-image: url("img/Languages.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+
+
+/* SKILLS */
+
+#skills {
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    color: #ffffff;
+    text-align: center; 
 }
 
-#Hobbies {
-    background-image: url("img/Loisirs.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+#skills h1{
+    font-family: 'Work Sans', sans serif;
+    font-size: 0.7em;
+}
+
+#skills h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+}
+
+
+
+/* LANGUAGES */
+
+#languages {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+#languages h1 {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 50;
+    color: rgb(0, 0, 0);
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
+    width: 38%;
+    padding: 5px;
+}
+
+#languages p {
+    font-size: 0.9em;
+    color: rgb(78, 73, 73);
+    font-family: 'Work Sans', sans serif;
+    margin-bottom: 1.75em;
+    width: 38%;
+    padding: 5px;
+}
+
+
+
+/* JOBS */
+
+#jobs {
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    color: #ffffff;
+    text-align: center; 
+}
+
+#jobs h1{
+    font-family: 'Work Sans', sans serif;
+    font-size: 0.7em;
+}
+
+#jobs h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+}
+
+#jobs h3{
+    font-family: 'Work Sans', sans serif;
+    font-size: 0.8em;
+}
+
+#jobs p{
+    font-family: 'Work Sans', sans serif;
+    font-size: 0.7em;
+}
+
+
+
+/* VOLUNTEER */
+
+#volunteer {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    color: #000000;
+    text-align: center; 
+}
+
+#volunteer h1{
+    font-family: 'Work Sans', sans serif;
+    font-size: 0.7em;
+}
+
+#volunteer h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+}
+
+#volunteer h3{
+    font-family: 'Work Sans', sans serif;
+    font-size: 0.8em;
+}
+
+#volunteer p{
+    font-family: 'Work Sans', sans serif;
+    font-size: 0.7em;
+}
+
+
+/* SCHOOL */
+
+#school {
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    color: #ffffff;
+    text-align: center; 
+}
+
+#school h1{
+    font-family: 'Work Sans', sans serif;
+    font-size: 0.7em;
+}
+
+#school h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+}
+
+
+/* CERTIFICATIONS */
+
+#certifications {
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    color: #000000;
+    text-align: center; 
+}
+
+#certifications h1{
+    font-family: 'Work Sans', sans serif;
+    font-size: 0.7em;
+}
+
+#certifications h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.9em;
+}
+
+/* CONTACTME */
+
+#contactme {
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    color: #ffffff;
+    text-align: center; 
+    padding: 10px;
+}
+
+#contactme h1{
+    font-family: 'Work Sans', sans serif;
+    font-size: 1em;
+}
+
+
+
+
+/*CONTACTME FORM*/
+
+input[type=text], select, textarea {
+    width: 30%; 
+    padding: 12px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type=submit] {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: #000000;
+    color: #fff
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #000000;
+    padding: 20px;
 }
