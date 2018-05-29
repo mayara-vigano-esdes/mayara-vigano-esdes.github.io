@@ -35,7 +35,7 @@ html, body {
     flex-wrap: nowrap;
 }
 
-button {
+a {
     background-color: white;
     border: solid 2px black;
     padding: 1.2em;
@@ -50,7 +50,7 @@ button {
     letter-spacing: 1px;  
 }
 
-button:hover{
+a:hover{
     background: rgb(0, 0, 0);
     color: white;
 }
@@ -413,6 +413,10 @@ volunteer article{
     font-size: 0.9em;
 }
 
+#certificats deux {
+    padding-top: 10px;
+    
+   }
 
 /* CONTACTME */
 
