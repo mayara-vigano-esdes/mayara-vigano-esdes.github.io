@@ -13,7 +13,9 @@ html, body {
     width: 100%;
 }
 
-
+* {
+    box-sizing: content-box;
+}
 
 /* MENU */
 
@@ -35,7 +37,7 @@ html, body {
     flex-wrap: nowrap;
 }
 
-a {
+#menu a {
     background-color: white;
     border: solid 2px black;
     padding: 1.2em;
@@ -50,7 +52,7 @@ a {
     letter-spacing: 1px;  
 }
 
-a:hover{
+#menu a:hover{
     background: rgb(0, 0, 0);
     color: white;
 }
@@ -179,7 +181,7 @@ a:hover{
     font-size: 18px;
 }
 
-ul {
+skills ul {
     list-style-type: square;
     color: #ffffff;
 }
@@ -484,8 +486,6 @@ input[type=submit]:hover {
 footer{
     
     background-color: rgb(255, 255, 255);
-    margin: 0%;
-    padding: 5px;
     color: #000000;
     font-family: 'Work Sans', sans serif;
     font-size: 7px;
@@ -495,12 +495,34 @@ footer{
     flex-wrap: nowrap;
     flex-direction: row;
     align-content: flex-end;
+    width: 40px;
+    
     
 }
 
+footer h1 {
+    color: #000000;
+    font-size: 15px;
+}
 footer a{
-    padding-right: 10px;
-    padding-left: 10px;
+    margin: 100%;
+    color: #000000;
+    font-size: 12px;
+
+}
+
+footer img{
+   margin: 10%;
+   width: 50%;
+
+}
+
+#footer article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
 }
 
 
