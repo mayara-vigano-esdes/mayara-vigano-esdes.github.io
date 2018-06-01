@@ -11,6 +11,7 @@ html, body {
  height:100%;
     margin: 0;
     width: 100%;
+    
 }
 
 * {
@@ -35,6 +36,7 @@ html, body {
     justify-content: space-around;
     align-items: flex-end;
     flex-wrap: nowrap;
+    
 }
 
 #menu a {
@@ -50,6 +52,7 @@ html, body {
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
     letter-spacing: 1px;  
+    text-decoration: none;
 }
 
 #menu a:hover{
@@ -60,12 +63,12 @@ html, body {
 .cell {cursor: cell;
 }
 
-#contact {
+#menu #contact {
     background-color: black;
     color: white;
 }
 
-#contact:hover {
+#menu #contact:hover {
     background-color: rgb(178, 218, 0);
 }
 
@@ -482,49 +485,69 @@ input[type=submit]:hover {
 }
 
 
+
 /* FOOTER */
-footer{
-    
-    background-color: rgb(255, 255, 255);
-    color: #000000;
+
+.footer-distributed{
+	background-color: #ffffff;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+    padding: 45px 50px;
+	margin-top: 20px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #000102;
+    font-size: 14px;
     font-family: 'Work Sans', sans serif;
-    font-size: 7px;
-    display: flex;
-    align-items: left;
-    justify-content: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-content: flex-end;
-    width: 40px;
-    
-    
+	margin: 0;
 }
 
-footer h1 {
-    color: #000000;
-    font-size: 15px;
-}
-footer a{
-    margin: 100%;
-    color: #000000;
-    font-size: 12px;
+/* Footer links */
 
-}
-
-footer img{
-   margin: 10%;
-   width: 50%;
-
+.footer-distributed p.footer-links{
+	font-size:16px;
+	font-weight: bold;
+    color:  #000000;
+    font-family: 'Raleway', sans-serif;
+	margin: 0 0 10px;
+	padding: 0;
 }
 
-#footer article {
-    display: flex;
-    flex-direction: column;
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin: 10px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color:  #000000;
+	border-radius: 2px;
+    font-size: 20px;
     align-items: center;
-    align-content: center;
-    width: 100%;
+	line-height: 35px;
+    padding: 5px;
 }
 
+.footer-distributed .footer-right img{
+    width: 30px;
+  
+    
+    
+}
 
 /*RESPONSIVE*/
 
@@ -534,7 +557,20 @@ profile {
     flex-wrap: nowrap;
     flex-direction: row;
     width: 80%;
-    
 }
 
+.footer-distributed .footer-left,
+.footer-distributed .footer-right{
+		text-align: center;
+}
+
+.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+}
+
+.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+}
+    
 }
