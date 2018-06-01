@@ -63,16 +63,18 @@ button:hover{
 
 /**ARTICLES**/
 article{
-    width: 70%;
-    padding-top: 70px;
-    padding-left: 35px;
+    width: 90%;
+    padding-top: 100px;
+    padding-left: 65px;
     padding-right: 10px;
+    padding-bottom: 40px;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     text-align: justify;
-    justify-content: flex-start;
+    justify-content: center;
     font-family: 'Raleway', sans-serif;
-    
+      
+
     
     
 }
@@ -97,11 +99,13 @@ article{
 	width: 100%;
 	text-align: left;
 	font: normal 16px sans-serif;
-    padding: 45px 50px;
+    padding: 45px 30px;
     margin-top: 20px;
     position: absolute;
-    
+        
 }
+
+
 
 .footer-distributed .footer-left p{
 	color:  #000102;
@@ -118,7 +122,7 @@ article{
 	font-weight: bold;
     color:  #000000;
     font-family: 'Raleway', sans-serif;
-	margin: 0 0 10px;
+	margin: 0 0 40px;
 	padding: 0;
 }
 
@@ -132,7 +136,8 @@ article{
 .footer-distributed .footer-right{
 	float: right;
 	margin: 10px;
-	max-width: 180px;
+    max-width: 180px;
+    
 }
 
 .footer-distributed .footer-right a{
@@ -145,6 +150,7 @@ article{
     align-items: center;
 	line-height: 35px;
     padding: 5px;
+    cursor: cell;
 }
 
 .footer-distributed .footer-right img{
