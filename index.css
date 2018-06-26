@@ -714,11 +714,7 @@ input[type=submit]:hover {
 
 
 /*mobile*/
-@media screen and (max-width:600px) {
-    section {
-  flex-wrap : nowrap;
-  flex-direction : column;
- }
+
 
  input[type=text], select, textarea {
     width: 90%; 
