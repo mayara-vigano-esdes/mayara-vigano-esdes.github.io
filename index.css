@@ -79,9 +79,9 @@ html, body {
 /* BANNER */
 
 #banner {
-	padding: 12em 0 10em 0;
+	padding: 5em 0 10em 0;
 	font-family: 'Raleway', sans-serif;
-    height: 100px;  
+    height: 150px;  
     width: 100%;
 }
 
@@ -90,18 +90,35 @@ html, body {
     font-weight: 100;
     color: #fff;
     line-height: 1em;
-    margin: 0 0 0.5em 0;
+    margin-left:40px;
     width: 38%;
-    padding: 15px;
+    padding: 35px;
+    transition: all 0.3s cubic-bezier(.77,.81,.42,.42);
+    animation: enter 5s ease-in-out;
+    animation-name: enter;
 }
 
-#banner p {
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 1.75em;
-    width: 38%;
-    font-family: 'Work Sans', sans serif;
-    padding: 15px;
+#banner h2 {
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    margin-left: 70px;
+    margin-top:0;
+    padding: 5px;
+    background-color: white;
+    padding: 3px; 
+    width: 10%;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(.77,.81,.42,.42);
+    animation: enter 5s ease-in-out;
+    animation-name: enter;
+}
+
+#banner h2:hover{
+    background: rgb(178, 218, 0);
+    color: white;
+}
+
+.cell {cursor: cell;
 }
 
 .parallax {
@@ -152,9 +169,10 @@ html, body {
 #presentation p{
     font-family: 'Work Sans', sans serif;
     font-size: 14px;
-    width: 90%;
+    width: 94%;
     text-align: justify;
-    padding: 35px;
+    padding: 36px;
+    
 }
 
 
@@ -678,14 +696,44 @@ input[type=submit]:hover {
     
 }
 
+
+/*ANIMATION*/
+
+@keyframes enter {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    } 
+    to {
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
 /*RESPONSIVE*/
 
-/**mobile**/
-@media screen and (max-width: 600px) {
-profile {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    width: 80%;
+
+/*mobile*/
+@media screen and (max-width:600px) {
+    section {
+  flex-wrap : nowrap;
+  flex-direction : column;
+ }
+
+ input[type=text], select, textarea {
+    width: 90%; 
+ }   
+    
+  /*tablet*/
+  @media screen and (min-width: 600px) and (max-width: 900px){
+    section a {
+        width: 37%;
+    }
+
+ input[type=text], select, textarea {
+        width: 100%; 
+    }   
+  
 }
 
 .footer-distributed .footer-left,
@@ -701,5 +749,5 @@ profile {
 .footer-distributed .footer-left p.footer-links{
 		line-height: 1.8;
 }
-    
+
 }
