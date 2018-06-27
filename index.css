@@ -148,7 +148,7 @@ html, body {
     
 }
 
-#presentation h2{
+#presentation h4{
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
@@ -157,12 +157,22 @@ html, body {
     
 }
 
-#presentation h3{
+#presentation h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    margin: 40px;
+    
+}
+
+
+#presentation h2{
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     text-align: justify;
     margin-right: 40px;
     margin-left: 40px;
+    margin-bottom: 5px;
     
 }
 
@@ -171,7 +181,9 @@ html, body {
     font-size: 14px;
     width: 94%;
     text-align: justify;
-    padding: 36px;
+    padding-bottom: 36px;
+    padding-left: 36px;
+    padding-right: 36px;
     
 }
 

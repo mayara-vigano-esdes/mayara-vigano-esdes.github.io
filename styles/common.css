@@ -72,23 +72,42 @@ article{
     color: rgb(255, 255, 255);
     text-align: justify;
     justify-content: center;
-    font-family: 'Raleway', sans-serif;
-      
+    font-family: 'Work Sans', sans serif;
 
     
     
 }
 
-#article p {
+
+article h1 {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+article h2 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin-top:60px;
+    text-transform: uppercase;
+    padding: 0em;
+}
+
+article h3 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding-bottom: 0em;
+}
+
+article p {
     font-size: 14px;
     color: rgb(255, 255, 255);
+    padding-bottom: 15px;
+   
       
 }
 
-#article h2 {
-    color: rgb(255, 255, 255);
-    font-family: 'Work Sans', sans serif;
-}
 
 /* FOOTER */
 
